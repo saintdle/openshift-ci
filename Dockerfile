@@ -10,7 +10,7 @@ ENV HELM_VER=3.6.2
 ENV OPENSHIFT_VER=4.7.19
 
 RUN   yum install epel-release -yq && \
-      yum install -yq jq expect curl wget git openssl less glibc python python-pip mailcap && \
+      yum install -yq jq expect curl wget unzip git openssl less glibc python python-pip mailcap && \
       wget https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY} -O /usr/bin/yq && \
       chmod +x /usr/bin/yq  && \
       wget -q https://get.helm.sh/helm-v${HELM_VER}-linux-amd64.tar.gz && \
