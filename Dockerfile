@@ -20,5 +20,5 @@ RUN   yum install epel-release -yq && \
       mv /tmp/openshift-install /usr/local/bin && \
       curl --silent --location "https://mirror.openshift.com/pub/openshift-v4/clients/ocp/${OPENSHIFT_VER}/openshift-client-linux.tar.gz" | tar xz -C /tmp && \
       mv /tmp/oc /usr/local/bin && \
-      mv /tmp/kubectl /usr/local/kubectl && \
+      mv /tmp/kubectl /usr/local/bin && \
       yum clean all
