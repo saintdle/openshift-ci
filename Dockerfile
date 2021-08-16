@@ -4,13 +4,13 @@ FROM centos:centos8
 LABEL maintainer="github.com/saintdle"
 
 # Versions can be altered for different tooling versions and deployments of OpenShift
-ENV YQ_VERSION=v4.9.6
+ENV YQ_VERSION=v4.11.2
 ENV YQ_BINARY=yq_linux_amd64
-ENV HELM_VER=3.6.2
-ENV OPENSHIFT_VER=4.7.19
+ENV HELM_VER=3.6.3
+ENV OPENSHIFT_VER=4.8.4
 
 RUN   yum install epel-release -yq && \
-      yum install -yq jq expect curl wget unzip git openssl less glibc && \
+      yum install -yq jq expect curl wget unzip git openssl less glibc && \      
       wget https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY} -O /usr/bin/yq && \
       chmod +x /usr/bin/yq  && \
       wget -q https://get.helm.sh/helm-v${HELM_VER}-linux-amd64.tar.gz && \
