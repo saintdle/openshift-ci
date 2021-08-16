@@ -5,10 +5,10 @@ Tooling versions can be updated by changing the Dockerfile ENV lines.
 
 Tools installed:
 * Manually 
-  * Openshift Install and Client - ver 4.7.19
+  * Openshift Install and Client - ver 4.8.4
   * Kubectl - from the OpenShift Client tar
-  * Helm - ver 3.6.2
-  * yq - ver 4.9.6
+  * Helm - ver 3.6.3
+  * yq - ver 4.11.2
 * From Latest YUM repos
   * jq
   * expect
@@ -19,4 +19,11 @@ Tools installed:
   * less
   * python + pip
 
-> docker pull saintdle/openshift-ci:0.1
+## Getting Started
+
+I wrote a blog post below for Deploying OpenShift using vRealize Automation, using this container
+ > https://veducate.co.uk/deploying-openshift-clusters-ipi-using-vra-code-stream/ 
+
+To run locally
+
+> docker pull saintdle/openshift-ci:latest
