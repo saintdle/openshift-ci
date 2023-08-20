@@ -7,7 +7,7 @@ LABEL maintainer="github.com/saintdle"
 ENV YQ_VERSION=v4.11.2
 ENV YQ_BINARY=yq_linux_amd64
 ENV HELM_VER=3.6.3
-ENV OPENSHIFT_VER=4.8.4
+ENV OPENSHIFT_VER=4.12.28
 
 RUN   yum install epel-release -yq && \
       yum install -yq jq expect curl wget unzip git openssl less glibc && \      
