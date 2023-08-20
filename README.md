@@ -5,7 +5,7 @@ Tooling versions can be updated by changing the Dockerfile ENV lines.
 
 Tools installed:
 * Manually 
-  * Openshift Install and Client - ver 4.8.4
+  * Openshift Install and Client - ver 4.12.28
   * Kubectl - from the OpenShift Client tar
   * Helm - ver 3.6.3
   * yq - ver 4.11.2
